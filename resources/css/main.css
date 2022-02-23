@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    color: seashell;
+    background-color: black;
+}
+
+header {
+    height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo img {
+    height: 50px;
+    margin-left: 10px;
+}
+
+#nav-bar ul {
+    display: flex;
+    margin: 20px;
+    list-style-type: none;
+}
+
+#nav-bar li {
+    display: flex;
+    justify-content: space-evenly;
+}
