@@ -4,13 +4,18 @@
     font-family: Helvetica, sans-serif;
     color: seashell;
     background-color: black;
+    /* outline: 1px solid red; */
 }
 
 header {
     height: 69px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 999;
+    position: fixed;
 }
 
 #logo img {
@@ -20,11 +25,99 @@ header {
 
 #nav-bar ul {
     display: flex;
+    width: 300px;
     margin: 20px;
     list-style-type: none;
+    justify-content: space-between;
 }
 
-#nav-bar li {
+#hero-section {
+    position: relative;
+    text-align: center;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero-section img {
+    height: 700px;  
+}
+
+#hero-content {
+    position: absolute;
+    line-height: 40px;
+    width: 1200px;
+}
+
+#second-section {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#second-content {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+#image-collections .images {
+    display: inline-block;
+    margin: 10px;
+}
+
+#image-collections .images img {
+    width: 300px;
+    height: 200px;
+}
+
+#image-collections figcaption {
+    padding-top: 10px;
+}
+
+#location-section {
+    background-image: url(../images/img-locations-background.jpg);
+    max-width: 1200px;
+    height: 500px;
+    display: flex;
+    margin: 0 auto;
+    flex-flow: column;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+#third-head {
+    background-color: transparent;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+#location-section #third-head h2 {
+    background-color: transparent;
+}
+
+#location-section #location-info {
+    background-color: transparent;
+    display: flex;
+    flex-flow: row;
+}
+
+#location-section .locations {
+    margin: 20px;
+    width: 300px;
+    line-height: 60px;
+    text-align: center;
+}
+
+#contact-section {
+    text-align: center;
+    line-height: 50px;
+    padding: 30px;
+}
+
+footer {
+    margin-left: 20px;
 }
